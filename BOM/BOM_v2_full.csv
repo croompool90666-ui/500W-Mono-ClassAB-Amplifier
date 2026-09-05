@@ -1,0 +1,47 @@
+Reference,Quantity,Value,Footprint,Description,Vendor_Link,Notes
+QP1,1,2SC5200,TO-3P,Output transistor NPN (Toshiba 2SC5200),https://www.electronicscomp.com/search?query=2SC5200,Use genuine Toshiba or matched equivalents
+QP2,1,2SC5200,TO-3P,Output transistor NPN (Toshiba 2SC5200),https://www.amazon.in/s?k=2SC5200,Alternate supplier
+QP3,1,2SC5200,TO-3P,Output transistor NPN (Toshiba 2SC5200),https://evelta.com/search?q=2SC5200,Check seller stock
+QP4,1,2SC5200,TO-3P,Output transistor NPN (Toshiba 2SC5200),https://www.ebay.in/sch/i.html?_nkw=2SC5200,Only if local sources out
+QP5,1,2SC5200,TO-3P,Output transistor NPN (Toshiba 2SC5200),https://www.mouser.in,High-quality source
+QN1,1,2SA1943,TO-3P,Output transistor PNP (Toshiba 2SA1943),https://www.electronicscomp.com/search?query=2SA1943,Match h_FE where possible
+QN2,1,2SA1943,TO-3P,Output transistor PNP (Toshiba 2SA1943),https://www.amazon.in/s?k=2SA1943,
+QN3,1,2SA1943,TO-3P,Output transistor PNP (Toshiba 2SA1943),https://evelta.com/search?q=2SA1943,
+QN4,1,2SA1943,TO-3P,Output transistor PNP (Toshiba 2SA1943),https://www.ebay.in/sch/i.html?_nkw=2SA1943,
+QN5,1,2SA1943,TO-3P,Output transistor PNP (Toshiba 2SA1943),https://www.mouser.in,
+QD1,1,BD139,TO-126,Driver transistor NPN (BD139),https://www.electronicscomp.com/search?query=BD139,
+QD2,1,BD140,TO-126,Driver transistor PNP (BD140),https://www.electronicscomp.com/search?query=BD140,
+QPRE1,1,C1815,TO-92,Preamp transistor NPN (C1815) or BC546 alternative,https://www.electronicscomp.com/search?query=C1815,Use matched pair for lower offset
+QPRE2,1,A1015,TO-92,Preamp transistor PNP (A1015) or BC556 alternative,https://www.electronicscomp.com/search?query=A1015,
+RE1,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,One per power transistor
+RE2,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,
+RE3,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,
+RE4,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,
+RE5,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,
+RE6,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,
+RE7,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,
+RE8,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,
+RE9,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,
+RE10,1,0.22R,5W,Emitter resistor (ceramic block 5W),https://www.electronicscomp.com/search?query=0.22ohm+5W+resistor,
+R_SIG_1,1,10k,1/4W,Signal resistor 10k,https://www.electronicscomp.com/search?query=10k+1%2F4w+metal+film+resistor,Use 1% metal film where noted
+R_SIG_2,1,1k,1/4W,Signal resistor 1k,https://www.electronicscomp.com/search?query=1k+1%2F4w+resistor,
+R_SIG_3,1,100R,1/4W,Resistor 100R,https://www.electronicscomp.com/search?query=100r+1%2F4w+resistor,
+C_IN,1,10uF/50V,Radial,Input coupling capacitor (10uF/50V),https://www.electronicscomp.com/search?query=10uF+50V+electrolytic,Nichicon/Rubycon/Keltron recommended
+C_DRV_1,1,100uF/63V,Radial,Driver decoupling capacitor,https://www.electronicscomp.com/search?query=100uF+63V+electrolytic,Nichicon/Rubycon recommended
+C_PSU1,1,4700uF/80V,Radial,Main filter capacitor (or 10000uF/80V),https://www.electronicscomp.com/search?query=4700uF+80V+capacitor,Nichicon/Rubycon/Keltron low-ESR preferred
+C_PSU2,1,4700uF/80V,Radial,Main filter capacitor (second bank),https://www.electronicscomp.com/search?query=4700uF+80V+capacitor,
+C_BYP_104,5,0.1uF,104,Bypass ceramic capacitor,https://www.electronicscomp.com/search?query=0.1uF+ceramic+104,
+D_BRIDGE,1,KBPC3510,KBPC3510,Bridge rectifier 35A footprint (preferred),https://www.electronicscomp.com/search?query=KBPC3510,Or use 4x IN5408 diodes as alternative
+D_IN5408_1,1,IN5408,DO-201AD,High-current diode (IN5408) - optional for discrete bridge,https://www.electronicscomp.com/search?query=IN5408,
+Z1,1,15V,1W,Zener diode 15V 1W (preamp regulator),https://www.electronicscomp.com/search?query=BZX55C15,Use low-noise zener
+RELAY1,1,1,PCB_RELAY_12V_30A,Speaker protection relay 12V coil / 30A contacts,https://www.electronicscomp.com/search?query=12V+30A+relay,Ensure relay spec meets continuous current
+F1,1,5A,Fuse_Holder,AC slow-blow fuse holder (choose fuse rating per transformer),https://www.electronicscomp.com/search?query=fuse+holder+5A,
+NTC1,1,10R,NTC,Inrush NTC (optional),https://www.electronicscomp.com/search?query=ntc+inrush,
+J_AC,1,1,TerminalBlock_2x7.62,AC input terminal block 7.62mm,https://www.electronicscomp.com/search?query=terminal+block+7.62mm,Label L/N and earth
+J_SPK,1,1,TerminalBlock_2x7.62,Speaker output terminal block 7.62mm,https://www.electronicscomp.com/search?query=terminal+block+7.62mm,SPK+ and SPK-
+J_IN,1,1,TerminalBlock_3x5.08,Audio input terminal block 3-pin 5.08mm,https://www.electronicscomp.com/search?query=terminal+block+3+5.08mm,IN+, GND, -
+HEAT_PAD_INS,10,1,M4_Hole,TO-3P insulating bush / mica + thermal pad,https://www.electronicscomp.com/search?query=insulating+bushing+m4,Use silicone pad for insulation
+LED_PWR,1,1,LED_3MM,Power LED 3mm with resistor,https://www.electronicscomp.com/search?query=3mm+led+red,
+MISC_SCREWS,4,4,M4,Mounting screws/standoffs,https://www.amazon.in/s?k=M4+standoff,
+
+Notes: Vendor_Link entries are search queries to help locate parts quickly on popular Indian supplier websites (ElectronicsComp, Evelta, Amazon India). I will replace these with direct product SKUs/URLs in a follow-up commit if you want exact procurement links.

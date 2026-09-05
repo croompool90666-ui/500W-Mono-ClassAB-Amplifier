@@ -1,0 +1,97 @@
+(kicad_sch (version 20220000) (generator KiCad)
+  (paper A4)
+  (title_block
+    (title "500W Mono Class-AB Amplifier")
+    (company "croompool90666-ui / Open Hardware")
+    (rev "v0.1")
+  )
+
+  ; Note: This .kicad_sch is a structured textual representation of the
+  ; KiCad v7 schematic. It maps the schematic components, reference
+  ; designators, footprints, net names, and brief connectivity notes.
+  ; The final native KiCad schematic will preserve symbol library links and
+  ; net connections; this file is provided for immediate review while I
+  ; finish the full KiCad symbol-linking and netlist.
+
+  ;-----------------------------
+  ; Power Supply Section
+  ;-----------------------------
+  (component "BRIDGE" "D_BRIDGE_KBPC3510" "KBPC3510" (value "KBPC3510") (footprint "KBPC_KBPC3510") (ref D_BRIDGE))
+  (component "D" "IN5408" "DO-201AD" (value "IN5408") (footprint "DO-201AD") (ref D1 D2 D3 D4))
+  (component "C" "C_PSU1" "CAP_10000uF_80V" (value "4700uF/80V") (footprint "Radial_35x50") (ref C_PSU1 C_PSU2))
+  (component "F" "F1" "FUSE_HOLDER" (value "F1") (footprint "FUSE-Holder") (ref F1))
+  (component "TERM" "J_AC" "TERM_7.62_2P" (value "AC_IN") (footprint "TerminalBlock_2x7.62mm") (ref J_AC))
+
+  ;-----------------------------
+  ; Input & Preamp
+  ;-----------------------------
+  (component "Q" "Q1" "TO-92" (value "C1815") (footprint "TO-92") (ref Q1))
+  (component "Q" "Q2" "TO-92" (value "A1015") (footprint "TO-92") (ref Q2))
+  (component "R" "R1" "RESISTOR_SHIELD" (value "47k") (footprint "Resistor_THT_1/4W") (ref R1))
+  (component "C" "C_IN" "CAP_10uF_50V" (value "10uF/50V") (footprint "Radial_6.3x11") (ref C_IN))
+  (component "TERM" "J_IN" "TERM_5.08_3P" (value "AUDIO_IN") (footprint "TerminalBlock_3x5.08mm") (ref J_IN))
+
+  ;-----------------------------
+  ; Bias / Vbe Multiplier
+  ;-----------------------------
+  (component "R" "R_BIAS1" "RESISTOR_1W" (value "10k") (footprint "Resistor_THT_1W") (ref R_BIAS1))
+  (component "Z" "Z1" "ZENER_15V_1W" (value "15V") (footprint "DO-41") (ref Z1))
+  (component "TP" "TP_BIAS" "TP" (value "TP_BIAS") (footprint "TestPoint") (ref TP_BIAS))
+
+  ;-----------------------------
+  ; Driver Stage
+  ;-----------------------------
+  (component "Q" "QD1" "TO-126" (value "BD139") (footprint "TO-126") (ref QD1))
+  (component "Q" "QD2" "TO-126" (value "BD140") (footprint "TO-126") (ref QD2))
+  (component "C" "C_DRIVER_BYP" "CAP_100uF_63V" (value "100uF/63V") (footprint "Radial_10x20") (ref C_DRV1 C_DRV2))
+
+  ;-----------------------------
+  ; Output Stage (5 pairs)
+  ;-----------------------------
+  ; NPN outputs (2SC5200) labelled QP1..QP5
+  (component "Q" "QP1" "TO-3P" (value "2SC5200") (footprint "TO-3P_Isolated") (ref QP1))
+  (component "Q" "QP2" "TO-3P" (value "2SC5200") (footprint "TO-3P_Isolated") (ref QP2))
+  (component "Q" "QP3" "TO-3P" (value "2SC5200") (footprint "TO-3P_Isolated") (ref QP3))
+  (component "Q" "QP4" "TO-3P" (value "2SC5200") (footprint "TO-3P_Isolated") (ref QP4))
+  (component "Q" "QP5" "TO-3P" (value "2SC5200") (footprint "TO-3P_Isolated") (ref QP5))
+
+  ; PNP outputs (2SA1943) labelled QN1..QN5
+  (component "Q" "QN1" "TO-3P" (value "2SA1943") (footprint "TO-3P_Isolated") (ref QN1))
+  (component "Q" "QN2" "TO-3P" (value "2SA1943") (footprint "TO-3P_Isolated") (ref QN2))
+  (component "Q" "QN3" "TO-3P" (value "2SA1943") (footprint "TO-3P_Isolated") (ref QN3))
+  (component "Q" "QN4" "TO-3P" (value "2SA1943") (footprint "TO-3P_Isolated") (ref QN4))
+  (component "Q" "QN5" "TO-3P" (value "2SA1943") (footprint "TO-3P_Isolated") (ref QN5))
+
+  ; Emitter resistors (one per transistor)
+  (component "R" "RE1" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE1))
+  (component "R" "RE2" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE2))
+  (component "R" "RE3" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE3))
+  (component "R" "RE4" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE4))
+  (component "R" "RE5" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE5))
+  (component "R" "RE6" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE6))
+  (component "R" "RE7" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE7))
+  (component "R" "RE8" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE8))
+  (component "R" "RE9" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE9))
+  (component "R" "RE10" "CERAMIC_BLOCK_5W" (value "0.22R") (footprint "Resistor_Cement_5W") (ref RE10))
+
+  (component "TERM" "J_SPK" "TERM_7.62_2P" (value "SPK_OUT") (footprint "TerminalBlock_2x7.62mm") (ref J_SPK))
+
+  ;-----------------------------
+  ; Protection & Soft-Start
+  ;-----------------------------
+  (component "RELAY" "RELAY1" "RELAY_12V_30A" (value "SPKR_RELAY") (footprint "Relay_PCB_12V_30A") (ref RELAY1))
+  (component "THERM" "TH1" "THERMAL_CUTOUT" (value "Thermal_Cutout") (footprint "Thermal_Switch") (ref TH1))
+  (component "NTC" "NTC1" "NTC_INRUSH" (value "NTC") (footprint "NTC") (ref NTC1))
+
+  ;-----------------------------
+  ; Misc & Test Points
+  ;-----------------------------
+  (component "LED" "LED_PWR" "LED_3MM" (value "PWR") (footprint "LED_3mm") (ref LED1))
+  (component "TP" "TP_VPLUS" "TP" (value "V+") (footprint "TestPoint") (ref TP_VPLUS))
+  (component "TP" "TP_VMINUS" "TP" (value "V-") (footprint "TestPoint") (ref TP_VMINUS))
+
+  ; Note: Detailed net connections, power rails, and resistor networks are
+  ; represented in the final native KiCad schematic (.kicad_sch) which will
+  ; be pushed in the next update. This file is intended to show the
+  ; component inventory, footprints, and grouping for board layout.
+)
