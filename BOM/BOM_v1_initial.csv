@@ -1,0 +1,31 @@
+Reference,Quantity,Value,Footprint,Description,Suggested Vendor (India),Vendor Notes
+QP1-QP5,5,2SC5200,TO-3P,Output NPN transistor (Toshiba 2SC5200),ElectronicsComp / Evelta,Search term: 2SC5200
+QN1-QN5,5,2SA1943,TO-3P,Output PNP transistor (Toshiba 2SA1943),ElectronicsComp / Evelta,Search term: 2SA1943
+QD1-QD4,4,BD139,TO-126,Driver NPN transistor (BD139) - alternative: TTC5200,ElectronicsComp,Common driver transistor
+QD5-QD8,4,BD140,TO-126,Driver PNP transistor (BD140) - alternative: TTA1943,ElectronicsComp,Mount on small heatsink
+Qpre,2,C1815 / A1015,TO-92,Preamp differential pair (C1815/A1015) or BC546/BC556,Local market (Lajpat Rai),Small signal transistors
+Re1-Re10,10,0.22R,5W,Cement Block,Emitter resistors (one per transistor),Local market / ElectronicsComp,Ceramic block 5W
+R_sig,20,Varies,1/4W_MF,Signal resistors (1% metal film - 10k,1k,47k,100R,etc),ElectronicsComp,Specify values in schematic
+R_bias,3,Varies,1W,Power/bias resistors (2W-5W as needed),ElectronicsComp,Bias network resistors
+C_in,1,10uF/50V,Radial_Elect,Input coupling capacitor,ElectronicsComp/Nichicon,Electrolytic
+C_dec,6,100uF/63V,Radial_Elect,Decoupling caps for driver/preamp,ElectronicsComp
+C_pwr,2,4700uF/80V or 1x10000uF/80V,Can_Radial,Main filter capacitors (use 2x 4700uF/80V in parallel if 10000uF unavailable),ElectronicsComp / Amazon India,Recommend low-ESR
+C_bypass,10,0.1uF,0805/Through_Hole,Bypass ceramic caps (104),ElectronicsComp,Ceramic polyester
+D_br,1,KBPC3510,KBPC3510,Bridge Rectifier 35A (preferred footprint),ElectronicsComp / Amazon India,Alternative: 4x IN5408 diodes
+D_in5408,4,IN5408,DO-201AD,High-current diode (use 4 in bridge if KBPC not used),ElectronicsComp,Heavy duty diodes
+Z1,1,15V,1W,Zener,Preamp regulator zener (15V 1W),ElectronicsComp,BZX55C15 or equivalent
+Relay1,1,1x,PCB_RELAY_12V,Speaker protection relay (12V coil, 30A contacts),ElectronicsComp / Amazon India,Ensure coil driven by transistor driver
+F1,1,5A,Fuse_Holder,AC fuse holder (slow-blow recommended),Local market / ElectronicsComp,Select according to transformer current
+NTC1,1,10R,NTC_Inrush,Optional inrush NTC for soft-start,ElectronicsComp,Or use relay soft-start circuit
+J_AC,1,1x,2pin_7.62mm,AC Transformer input screw terminal (7.62mm pitch),ElectronicsComp / Local market,Label L & N
+J_SPK,1,1x,2pin_7.62mm,Speaker output screw terminal (7.62mm pitch),ElectronicsComp / Local market,SPK+ and SPK-
+J_IN,1,1x,3pin_5.08mm,Audio input screw terminal 3-pin (5.08mm pitch),ElectronicsComp / Local market,IN+, GND, -
+HeatsinkPads,10,Insulator Kit,M4_Hole,Insulating bush/washers for TO-3P mounting,Local hardware store / ElectronicsComp,Use silicone pads or mica + thermal compound
+LED1,1,LED_Red,LED_3mm,Power/Status LED,ElectronicsComp,Include current-limiting resistor
+Misc_SMD,Various,Headers,SMD/TH,Headers,terminal blocks,spacers,standoff,ElectronicsComp,Per mechanical needs
+Mounting,4,M4,Mount_Hole,Mounting holes for chassis/heatsink,Local hardware store,M4 clearance holes
+
+Notes:
+- The "Suggested Vendor (India)" column indicates common suppliers where these parts are usually found (ElectronicsComp, Evelta, local markets like Lajpat Rai). Use the search term column to quickly locate parts on vendor sites.
+- Quantities for resistors/capacitors depend on exact schematic values. This BOM gives primary high-power and critical parts up front for procurement.
+- I will expand this BOM into a part-by-part CSV with exact reference designators (R1, R2, C1, etc.) after the native KiCad schematic is completed.
