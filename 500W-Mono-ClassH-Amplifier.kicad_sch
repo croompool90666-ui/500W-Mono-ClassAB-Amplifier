@@ -1,11 +1,11 @@
 (kicad_sch (version 20211014) (generator kicad_sch)
   (paper "A4")
-  (title "500W-Mono-ClassAB-Amplifier")
+  (title "500W-Mono-ClassH-Amplifier")
   (date "2026-09-06")
   (comment "Minimal valid KiCad v7 schematic for CI: contains one resistor from the standard Device library.")
   (components
     (comp (ref R1) (value "10k") (footprint "Resistors_SMD:R_0805") (lib_id "Device:R")
-      (tstamp 1234567891)
+      (tstamp 1234567892)
       (unit 1)
       (symbol "R")
       (at 50 50)
